@@ -1,12 +1,12 @@
 import './App.css';
-import { changeColor } from './main';
+import { viewCode } from './main';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={changeColor}>
-          View Code Snippets
+        <button onClick={viewCode}>
+          View Code Only
         </button>
       </header>
     </div>
