@@ -6,7 +6,7 @@ export async function viewCode() {
   await chrome.tabs.query({active: true, currentWindow: true}, 
     (
       r => {
-      chrome.tabs.executeScript(r[0].id , {file: 'scripts/viewCodeScript.js'}, function() {
+      chrome.tabs.executeScript(r[0].id , {file: 'scripts/launch-kiktab.js'}, function() {
         if(chrome.runtime.lastError) {
           console.error("Script injection failed: " + chrome.runtime.lastError.message);
         }
